@@ -24,6 +24,7 @@ class MainWdgt(QtWidgets.QMainWindow, MainWidget, Ui_MainWdgt):
         self.progress_bar = None
         self.progress_bar_update_interval = 1
         self.progress_bar_last_shown_value = 0
+        self.setFixedSize(360, 620)
 
     def _store_state(self):
         self.config()["main_window_state"] = self.saveGeometry()
